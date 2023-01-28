@@ -15,8 +15,12 @@ SCOPES = ['https://www.googleapis.com/auth/calendar']
 
 def main():
     # read ics file
-    with open('events.ics', 'rb') as f:
-        ical = icalendar.Calendar.from_ical(f.read())
+    #with open('events.ics', 'rb') as f:
+    #    ical = icalendar.Calendar.from_ical(f.read())
+
+    # read ics file
+    with open('public/ical/ecsess-electrical-computer-and-software-engineering-student-society.ics', 'r') as file:
+        ical = icalendar.Calendar.from_ical(file.read())
 
 
     creds = None
@@ -53,7 +57,7 @@ def main():
                 'timeZone': 'America/Toronto'
             },
             'end': {
-                'dateTime': component.get('dtend').dt.isoformat(),
+                'dateTime': component.get('dtstart').dt.isoformat(),
                 'timeZone': 'America/Toronto'
             }
         }

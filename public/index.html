@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- https://picocss.com/ -->
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+
+    <style>
+body {
+    width: 80%;
+    margin: auto;
+}    </style>
+
+    <title>Facebook Events</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/add-to-calendar-button@1/assets/css/atcb.min.css">
+</head>
+<body>
+<main>
+    <h1>Facebook Events</h1>
+    <section>
+        <h2>Upcoming Events</h2>
+
+        <nav>
+            <ul id="sources">
+                <li>Filter:</li>
+                <li><a href="#" id="ecsess-electrical-computer-and-software-engineering-student-society">Ecsess : Electrical, Computer, and Software Engineering Student Society</a></li>
+            </ul>
+        </nav>
+
+        <div id="events" class="grid">
+            <article class="ecsess-electrical-computer-and-software-engineering-student-society">
+                <img src="img/https-www-facebook-com-events-12129445763132552023-02-01t17-30-00-05-00.jpg"/>
+                <h3>ECSESS x ECC Internship Panel</h3>
+    
+                <p>17:30 - Wednesday 01 Feb 2023</p>
+                <p>@ Frank Dawson Adams Building</p>
+                <p>Organised by Ecsess : Electrical, Computer, and Software Engineering Student Society</p>
+                <a href="https://www.facebook.com/events/1212944576313255/" target="_blank">View on Facebook</a>
+                
+                <br><br>
+
+                <div class="atcb" style="display: none;">
+                    {
+                        "name": "ECSESS x ECC Internship Panel",
+                        "startDate": "2023-02-01",
+                        "startTime": "17:30",
+                        "endTime": "19:30",
+                        "location": "Frank Dawson Adams Building",
+                        "description": "Organized by Ecsess : Electrical, Computer, and Software Engineering Student Society. See https://www.facebook.com/events/1212944576313255/ for more info",
+                        "timeZone": "Canada/Toronto",
+                        "uid": "https-www-facebook-com-events-12129445763132552023-02-01t17-30-00-05-00",
+
+                        "label": "Add ECSESS x... to your Calendar",
+                        "iCalFileName": "https-www-facebook-com-events-12129445763132552023-02-01t17-30-00-05-00",
+
+                        "options": ["Apple", "Google|Google Calendar", "Microsoft365", "Outlook.com", "Yahoo", "iCal|iCal (.ics file)"],
+                        "trigger": "click",
+                        "listStyle": "overlay",
+                        "lightMode": "system"
+                    }
+                </div>
+            </article>
+            <article class="ecsess-electrical-computer-and-software-engineering-student-society">
+                <img src="img/https-www-facebook-com-events-8462043997968072023-02-02t18-00-00-05-00.jpg"/>
+                <h3>MINING MOOSE on an ELECTRIC BUSS CRAWL</h3>
+    
+                <p>18:00 - Thursday 02 Feb 2023</p>
+                <p>@ Public
+  · Anyone on or off Facebook</p>
+                <p>Organised by Ecsess : Electrical, Computer, and Software Engineering Student Society</p>
+                <a href="https://www.facebook.com/events/846204399796807/" target="_blank">View on Facebook</a>
+                
+                <br><br>
+
+                <div class="atcb" style="display: none;">
+                    {
+                        "name": "MINING MOOSE on an ELECTRIC BUSS CRAWL",
+                        "startDate": "2023-02-02",
+                        "startTime": "18:00",
+                        "endTime": "20:00",
+                        "location": "Public
+  · Anyone on or off Facebook",
+                        "description": "Organized by Ecsess : Electrical, Computer, and Software Engineering Student Society. See https://www.facebook.com/events/846204399796807/ for more info",
+                        "timeZone": "Canada/Toronto",
+                        "uid": "https-www-facebook-com-events-8462043997968072023-02-02t18-00-00-05-00",
+
+                        "label": "Add MINING... to your Calendar",
+                        "iCalFileName": "https-www-facebook-com-events-8462043997968072023-02-02t18-00-00-05-00",
+
+                        "options": ["Apple", "Google|Google Calendar", "Microsoft365", "Outlook.com", "Yahoo", "iCal|iCal (.ics file)"],
+                        "trigger": "click",
+                        "listStyle": "overlay",
+                        "lightMode": "system"
+                    }
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+    <section id="pages">
+        <h2>Pages & communities</h2>
+        <p>Check out the pages and communities that organise these events!</p>
+        <ul>
+            <li><a href="https://www.facebook.com/ECSESS/upcoming_hosted_events" target="_blank">https://www.facebook.com/ECSESS/upcoming_hosted_events</a></li>
+        </ul>
+        <p>(Note: this page is not made by the owners of the pages/communities listed above)</p>
+    </section>
+</main>
+
+<footer class="grid">
+    <span>
+        Events collected & page generated using
+        <a href="https://github.com/Denperidge/facebook-event-aggregator">Facebook Event Aggregator</a>.
+    </span>
+    <span>CSS Stylesheet by <a href="https://picocss.com/" target="_blank">Pico.css</a></span>
+    <span>Calendar buttons by <a href="https://add-to-calendar-button.com/" target="_blank">ATCB</a></span>
+    <span id="last-update">Last update: <span id="2023-01-28T18:03:06.626039">18:03, 01/28/23</span></span>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
+<!-- https://github.com/add2cal/add-to-calendar-button -->
+<script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@1" async defer></script>
+<script>$(document).ready(function() {
+    sourceFilters = $("nav a");
+    eventSelector = "#events article";
+    events = $(eventSelector);
+
+    sourceFilters.on("click", function(e) {
+        sourceFilter = $(e.target);
+        console.log(sourceFilter.attr("id"))
+
+        // If not pressed before,
+        if (sourceFilter.attr("role") != "button") {
+            sourceFilters.attr("role", "");  // Disable any other active buttons
+            sourceFilter.attr("role", "button");  // Activate the current
+
+            let selectedEvents = $(`${eventSelector}.${sourceFilter.attr("id")}`);
+
+            events.not(selectedEvents).hide(400);  // Hide all events
+            // Besides of the selected source
+            selectedEvents.show(400);
+        } else {
+            sourceFilter.attr("role", "");
+            events.show(400);
+        }
+    });
+
+    lastUpdateElement = $("#last-update span").first();
+    lastUpdate = Date.parse(lastUpdateElement.attr("id"));
+    // Thanks to https://stackoverflow.com/a/5511376
+    let yesterday = new Date();
+    yesterday.setDate(yesterday.getDate() - 1);
+
+    if (lastUpdate < yesterday) {
+        lastUpdateElement.css("color", "red");
+    }
+
+    
+});</script>
+</body>
+</html>

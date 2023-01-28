@@ -23,7 +23,8 @@ class Event(object):
     def __init__(self, name, datetime, source, location, url):
         self.name = name
         # Replacement due to bug ? https://github.com/dateutil/dateutil/issues/70#issuecomment-945080282
-        self.datetime = parser.parse(datetime.replace("UTC", ""))
+        #self.datetime = parser.parse(datetime.replace("UTC", ""))
+        self.datetime = parser.parse(datetime.replace("EST", "UTC+5"))
         self.location = location
         self.url = url
         self.source = source
