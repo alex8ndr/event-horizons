@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #ED1B24;
+    text-align: left;
+    font-family: Arial;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    color: white;
+    
+}
+
+#title {
+    justify-self: baseline;
+}
+
+body {
+    margin: 0;
+}
+
+html, body, iframe {
+    height: 100%;
+}
+
+
