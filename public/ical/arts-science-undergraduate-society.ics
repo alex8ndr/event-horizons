@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+
+VERSION:2.0
+
+PRODID:ics.py - http://git.io/lLljaA
+
+BEGIN:VEVENT
+
+DESCRIPTION:Organized by Arts & Science Undergraduate Society. See https://www.facebook.com/events/915037439665264/ for more info
+
+LOCATION:Thomson House Restaurant/Bar/Cafe and Reception Hall
+
+DTSTART:20230211T010000Z
+
+SUMMARY:ASUS Presents: Winter Semi-Formal
+
+UID:https-www-facebook-com-events-9150374396652642023-02-10t20-00-00-05-00
+
+URL:https://www.facebook.com/events/915037439665264/
+
+END:VEVENT
+
+BEGIN:VEVENT
+
+DESCRIPTION:Organized by Arts & Science Undergraduate Society. See https://www.facebook.com/events/540046194763092/ for more info
+
+LOCATION:Duration: 2 hr
+
+DTSTART:20230201T000000Z
+
+SUMMARY:TRIVIA TUESDAY
+
+UID:https-www-facebook-com-events-5400461947630922023-02-01t00-00-00-00-00
+
+URL:https://www.facebook.com/events/540046194763092/
+
+END:VEVENT
+
+END:VCALENDAR

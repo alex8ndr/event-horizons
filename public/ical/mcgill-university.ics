@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:Organized by McGill University . See https://www.facebook.com/events/559210512765760/ for more info
+LOCATION:McGill Mechanical Engineering Department
+DTSTART:20230130T160000Z
+SUMMARY:6th anniversary Commemoration for Quebec City Mosque attack
+UID:https-www-facebook-com-events-5592105127657602023-01-30t11-00-00-05-00
+URL:https://www.facebook.com/events/559210512765760/
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Organized by McGill University . See https://www.facebook.com/events/933174877864299/ for more info
+LOCATION:Tanna Schulich Hall\, New Music Building
+DTSTART:20230201T220000Z
+SUMMARY:McGill Black History Month Opening Ceremony 2023
+UID:https-www-facebook-com-events-9331748778642992023-02-01t17-00-00-05-00
+URL:https://www.facebook.com/events/933174877864299/
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Organized by McGill University . See https://www.facebook.com/events/2313144445534092/ for more info
+LOCATION:Room 218\, Department of Family Medicine (5858 Côte-des-Neiges)
+DTSTART:20230130T223000Z
+SUMMARY:A visit with Inuk Elder Reepa Evic-Carleton
+UID:https-www-facebook-com-events-23131444455340922023-01-30t17-30-00-05-00
+URL:https://www.facebook.com/events/2313144445534092/
+END:VEVENT
+END:VCALENDAR
