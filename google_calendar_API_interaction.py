@@ -15,8 +15,7 @@ SCOPES = ['https://www.googleapis.com/auth/calendar']
 
 def main():
     # read ics file
-    with open('public/ical/ecsess-electrical-computer-and-software-engineering-student-society.ics', 'r', encoding = "ISO-8859-1") as file:
-        ical = icalendar.Calendar.from_ical(file.read())
+    
     cal_dict = {
     'asus': 'f43c8cdeca5ebf46eaac369c33a6132fbd34dac309c4102b4391ebc861754fac@group.calendar.google.com',
     'aus': '5357e8f7749438e036cf0b600e3ca3dbedf3750d04dbc285c6f10498c0eff845@group.calendar.google.com',
@@ -53,27 +52,32 @@ def main():
             token.write(creds.to_json())
 
     try:
-        
         #build calendar api service with SCOPES
         service = build('calendar', 'v3', credentials=creds)
         # Call the Calendar API
+
+        #clear all calendars
+        for cal in cal_dict:
+            events = service.events().list(calendarId=cal_dict[cal]).execute()
+            for event in events['items']:
+                service.events().delete(calendarId=cal_dict[cal], eventId=event['id']).execute()
+        
+        #update calendars
         event = None
         calendar_id = None
         for file in ics_files:
-            if 'aus' in file:
-                calendar_id = cal_dict['aus']
-            elif 'asus' in file:
+            if 'arts-science' in file:
                 calendar_id = cal_dict['asus']
             elif 'csus' in file:
                 calendar_id = cal_dict['csus']
             elif 'ecsess' in file:
                 calendar_id = cal_dict['ecsess']
-            elif 'mame' in file:
+            elif 'mechanical' in file:
                 calendar_id = cal_dict['mame']
-            elif 'mcgill' in file:
-                calendar_id = cal_dict['mcgill']
-            elif 'sus' in file and not 'asus' in file and not 'csus' in file:
+            elif 'science' in file and not 'asus' in file and not 'csus' in file:
                 calendar_id = cal_dict['sus']
+            else:
+                calendar_id = cal_dict['mcgill']
             
             with open('public/ical/' + file, 'r', encoding = "ISO-8859-1") as file:
                 ical = icalendar.Calendar.from_ical(file.read())
