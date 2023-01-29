@@ -5,13 +5,16 @@
 .header {
     background-color: #ED1B24;
     text-align: left;
-    font-family: Arial;
+    font-family: 'Arial';
     padding-top: 20px;
     padding-bottom: 5px;
     padding-left: 20px;
     color: white;
+    display: grid;
+
     
 }
+
 
 #title {
     justify-self: baseline;
