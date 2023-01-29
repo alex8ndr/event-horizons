@@ -1,0 +1,12 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:Organized by CSUS - Computer Science Undergraduate Society. See https://www.facebook.com/events/559175986228318/ for more info
+LOCATION:1 person responded
+DTSTART:20230201T220000Z
+SUMMARY:EquiTEA
+UID:https-www-facebook-com-events-5591759862283182023-02-01t17-00-00-05-00
+URL:https://www.facebook.com/events/559175986228318/
+END:VEVENT
+END:VCALENDAR

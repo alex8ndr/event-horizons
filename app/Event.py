@@ -24,7 +24,11 @@ class Event(object):
         self.name = name
         # Replacement due to bug ? https://github.com/dateutil/dateutil/issues/70#issuecomment-945080282
         #self.datetime = parser.parse(datetime.replace("UTC", ""))
-        self.datetime = parser.parse(datetime.replace("EST", "UTC+5"))
+        print(datetime)
+        try:
+            self.datetime = parser.parse(datetime.replace("EST", "UTC+5"))
+        except Exception as e:
+            self.datetime = parser.parse(datetime[0:10].replace("UTC", ""))
         self.location = location
         self.url = url
         self.source = source

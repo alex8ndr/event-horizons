@@ -1,0 +1,52 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:Organized by McGill Association of Mechanical Engineers. See https://www.facebook.com/events/1843608936016224/ for more info
+LOCATION:Duration: 3 hr
+DTSTART:20230206T210000Z
+SUMMARY:MAME 3x3 Hockey Tournament
+UID:https-www-facebook-com-events-18436089360162242023-02-06t16-00-00-05-00
+URL:https://www.facebook.com/events/1843608936016224/
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Organized by McGill Association of Mechanical Engineers. See https://www.facebook.com/events/482821090496967/ for more info
+LOCATION:Public\n  · Anyone on or off Facebook
+DTSTART:20230203T000000Z
+SUMMARY:Missile on a Train Apartment Crawl!
+UID:https-www-facebook-com-events-4828210904969672023-02-02t19-00-00-05-00
+URL:https://www.facebook.com/events/482821090496967/
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Organized by McGill Association of Mechanical Engineers. See https://www.facebook.com/events/1332516464195215/ for more info
+LOCATION:Lorne M. Trottier Building - McGill University
+DTSTART:20230131T230000Z
+SUMMARY:CEUS x MAME : Wine & Cheese Networking
+UID:https-www-facebook-com-events-13325164641952152023-01-31t18-00-00-05-00
+URL:https://www.facebook.com/events/1332516464195215/
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Organized by McGill Association of Mechanical Engineers. See https://www.facebook.com/events/745910076632419/ for more info
+LOCATION:Duration: 3 hr
+DTSTART:20230202T173000Z
+SUMMARY:Lora's Mental Health Thursdays @ MAME CAFE
+UID:https-www-facebook-com-events-7459100766324192023-02-02t12-30-00-05-00
+URL:https://www.facebook.com/events/745910076632419/?event_time_id=745910083299085
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Organized by McGill Association of Mechanical Engineers. See https://www.facebook.com/events/745910076632419/ for more info
+LOCATION:Duration: 3 hr
+DTSTART:20230202T173000Z
+SUMMARY:Lora's Mental Health Thursdays @ MAME CAFE
+UID:https-www-facebook-com-events-7459100766324192023-02-02t12-30-00-05-00
+URL:https://www.facebook.com/events/745910076632419/
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Organized by McGill Association of Mechanical Engineers. See https://www.facebook.com/events/653453553195639/ for more info
+LOCATION:Duration: 2 days
+DTSTART:20230203T000000Z
+SUMMARY:CAD|MADNESS 2023
+UID:https-www-facebook-com-events-6534535531956392023-02-03t00-00-00
+URL:https://www.facebook.com/events/653453553195639/
+END:VEVENT
+END:VCALENDAR

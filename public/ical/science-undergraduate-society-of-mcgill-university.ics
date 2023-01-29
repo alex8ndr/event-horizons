@@ -1,0 +1,12 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:Organized by Science Undergraduate Society of McGill University. See https://www.facebook.com/events/3469968223236921/ for more info
+LOCATION:Le Salon Richmond
+DTSTART:20230218T010000Z
+SUMMARY:SUS Speakeasy Gala 2023
+UID:https-www-facebook-com-events-34699682232369212023-02-17t20-00-00-05-00
+URL:https://www.facebook.com/events/3469968223236921/
+END:VEVENT
+END:VCALENDAR
