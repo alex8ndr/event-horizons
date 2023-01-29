@@ -60,19 +60,19 @@ def main():
         event = None
         calendar_id = None
         for file in ics_files:
-            if 'aus' in file and not 'mcgill' in file:
+            if 'aus' in file:
                 calendar_id = cal_dict['aus']
-            elif 'asus' in file and not 'mcgill' in file:
+            elif 'asus' in file:
                 calendar_id = cal_dict['asus']
-            elif 'csus' in file and not 'mcgill' in file:
+            elif 'csus' in file:
                 calendar_id = cal_dict['csus']
-            elif 'ecsess' in file and not 'mcgill' in file:
+            elif 'ecsess' in file:
                 calendar_id = cal_dict['ecsess']
-            elif 'mame' in file and not 'mcgill' in file:
+            elif 'mame' in file:
                 calendar_id = cal_dict['mame']
             elif 'mcgill' in file:
                 calendar_id = cal_dict['mcgill']
-            elif 'sus' in file and not 'mcgill' in file and not 'asus' in file and not 'csus' in file:
+            elif 'sus' in file and not 'asus' in file and not 'csus' in file:
                 calendar_id = cal_dict['sus']
             
             with open('public/ical/' + file, 'r', encoding = "ISO-8859-1") as file:
